@@ -2,6 +2,8 @@ package com.kinyi.queue;
 
 import org.junit.Test;
 
+import java.util.Random;
+
 import static org.junit.Assert.*;
 
 /**
@@ -23,4 +25,21 @@ public class LoopQueueTest {
         }
     }
 
+    @Test
+    public void compareTest() {
+        System.out.println(testQueue(new ArrayQueue<>(), 100000));
+        System.out.println(testQueue(new LoopQueue<>(), 100000));
+    }
+
+    private double testQueue(Queue<Integer> queue, int opCount) {
+        long start = System.nanoTime();
+        Random random = new Random();
+        for (int i = 0; i < opCount; i++) {
+            queue.enqueue(random.nextInt(Integer.MAX_VALUE));
+        }
+        for (int i = 0; i < opCount; i++) {
+            queue.dequeue();
+        }
+        return (System.nanoTime() - start) /1000000000.0;
+    }
 }
