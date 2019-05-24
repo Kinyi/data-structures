@@ -27,8 +27,9 @@ public class LoopQueueTest {
 
     @Test
     public void compareTest() {
-        System.out.println(testQueue(new ArrayQueue<>(), 100000));
+//        System.out.println(testQueue(new ArrayQueue<>(), 100000));
         System.out.println(testQueue(new LoopQueue<>(), 100000));
+        System.out.println(testQueue(new LinkedListQueue<>(), 100000));
     }
 
     private double testQueue(Queue<Integer> queue, int opCount) {
