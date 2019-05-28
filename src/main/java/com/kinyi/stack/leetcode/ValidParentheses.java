@@ -1,4 +1,4 @@
-package com.kinyi.leetcode;
+package com.kinyi.stack.leetcode;
 
 import java.util.Stack;
 

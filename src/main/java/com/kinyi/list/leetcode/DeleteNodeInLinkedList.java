@@ -1,4 +1,4 @@
-package com.kinyi.leetcode;
+package com.kinyi.list.leetcode;
 
 /**
  *237. 删除链表中的节点

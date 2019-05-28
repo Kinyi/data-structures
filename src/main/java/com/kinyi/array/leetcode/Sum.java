@@ -1,6 +1,8 @@
-package com.kinyi.leetcode.recursive;
+package com.kinyi.array.leetcode;
 
 /**
+ * 数组递归求和
+ *
  * @author Kinyi_Chan
  * @since 2019-05-24
  */

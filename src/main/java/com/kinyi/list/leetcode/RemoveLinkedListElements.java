@@ -1,4 +1,4 @@
-package com.kinyi.leetcode;
+package com.kinyi.list.leetcode;
 
 /**
  * 203. 移除链表元素
