@@ -5,6 +5,8 @@ import java.util.Queue;
 import java.util.Stack;
 
 /**
+ * Binary Search Tree
+ *
  * @author Kinyi_Chan
  * @since 2019-05-28
  */
