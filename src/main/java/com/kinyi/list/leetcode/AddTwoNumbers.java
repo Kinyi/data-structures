@@ -25,14 +25,14 @@ public class AddTwoNumbers {
         ListNode rst = null;
         ListNode cur = null;
         do {
-            int i = sum * 10 + reverse((l1 == null ? 0 : l1.val) + (l2 == null ? 0 : l2.val));
+            int i = sum + (l1 == null ? 0 : l1.val) + (l2 == null ? 0 : l2.val);
             if (rst == null) {
-                rst = cur = new ListNode(i / 10);
+                rst = cur = new ListNode(i % 10);
             } else {
-                cur.next = new ListNode(i / 10 == 10 ? 0 : i / 10);
+                cur.next = new ListNode(i / 10 == 10 ? 1 : i % 10);
                 cur = cur.next;
             }
-            sum = i / 10 == 10 ? 1 : i % 10;
+            sum = i / 10 == 10 ? 0 : i / 10;
             if (l1 != null) {
                 l1 = l1.next;
             }
@@ -46,12 +46,12 @@ public class AddTwoNumbers {
         return rst;
     }
 
-    private int reverse(int ini) {
-        if (ini > 99 || ini < 0) {
-            throw new IllegalArgumentException("illegal");
-        }
-        return ini / 10 + ini % 10 * 10;
-    }
+//    private int reverse(int ini) {
+//        if (ini > 99 || ini < 0) {
+//            throw new IllegalArgumentException("illegal");
+//        }
+//        return ini / 10 + ini % 10 * 10;
+//    }
 
     public static void main(String[] args) {
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
