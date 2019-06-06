@@ -1,6 +1,6 @@
 package com.kinyi.set;
 
-import com.kinyi.tree.sbt.BST;
+import com.kinyi.tree.bst.BST;
 
 /**
  * @author Kinyi_Chan

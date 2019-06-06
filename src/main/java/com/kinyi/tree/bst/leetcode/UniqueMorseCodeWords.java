@@ -1,4 +1,4 @@
-package com.kinyi.tree.sbt.leetcode;
+package com.kinyi.tree.bst.leetcode;
 
 /**
  * @author Kinyi_Chan

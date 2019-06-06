@@ -1,10 +1,8 @@
-package com.kinyi.tree.sbt;
+package com.kinyi.tree.bst;
 
 import org.junit.Test;
 
 import java.util.Random;
-
-import static org.junit.Assert.*;
 
 /**
  * @author Kinyi_Chan

@@ -1,4 +1,4 @@
-package com.kinyi.tree.sbt;
+package com.kinyi.tree.bst;
 
 import java.util.LinkedList;
 import java.util.Queue;
