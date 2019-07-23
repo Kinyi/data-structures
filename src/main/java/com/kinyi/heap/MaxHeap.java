@@ -14,8 +14,38 @@ public class MaxHeap<E extends Comparable<E>> {
 
     private Array<E> data;
 
+    public MaxHeap() {
+        this.data = new Array<>();
+    }
+
     public MaxHeap(int capacity) {
         this.data = new Array<>(capacity);
+    }
+
+    /**
+     * heapify
+     *
+     * @param arr
+     */
+    public MaxHeap(E[] arr) {
+        data = new Array<>(arr);
+        //从最后一个叶子节点的父节点开始siftDown
+        for (int i = parent(size() - 1); i >= 0; i--) {
+            siftDown(i);
+        }
+    }
+
+    /**
+     * 取出最大元素 放入新元素
+     *
+     * @param e
+     * @return
+     */
+    public E replace(E e) {
+        E rst = findMax();
+        data.set(0, e);
+        siftDown(0);
+        return rst;
     }
 
     /**
