@@ -179,4 +179,13 @@ public class Array<E> {
         }
         data = newData;
     }
+
+    public void swap(int i, int j) {
+        if (i < 0 || i > getSize() - 1 || j < 0 || j > getSize()) {
+            throw new IllegalArgumentException("illegal index");
+        }
+        E tmp = data[i];
+        data[i] = data[j];
+        data[j] = tmp;
+    }
 }
