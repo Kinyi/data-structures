@@ -3,6 +3,8 @@ package com.kinyi.heap;
 import com.kinyi.queue.Queue;
 
 /**
+ * 优先队列
+ *
  * @author Kinyi_Chan
  * @since 2019-07-23
  */
