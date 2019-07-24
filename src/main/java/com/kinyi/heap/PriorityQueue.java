@@ -16,6 +16,10 @@ public class PriorityQueue<E extends Comparable<E>> implements Queue<E> {
         this.maxHeap = new MaxHeap<>();
     }
 
+    public PriorityQueue(int capacity) {
+        this.maxHeap = new MaxHeap<>(capacity);
+    }
+
     @Override
     public void enqueue(E e) {
         maxHeap.add(e);
