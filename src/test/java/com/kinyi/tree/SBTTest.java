@@ -1,5 +1,6 @@
-package com.kinyi.tree.bst;
+package com.kinyi.tree;
 
+import com.kinyi.tree.bst.BST;
 import org.junit.Test;
 
 import java.util.Random;
