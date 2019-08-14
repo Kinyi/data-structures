@@ -16,11 +16,7 @@ public class IntersectionOfTwoArraysII {
     public int[] intersect(int[] nums1, int[] nums2) {
         Map<Integer, Integer> map = new TreeMap<>();
         for (int i : nums1) {
-            if (map.containsKey(i)) {
-                map.put(i, map.get(i) + 1);
-            } else {
-                map.put(i, 1);
-            }
+            map.put(i, map.getOrDefault(i, 0) + 1);
         }
         List<Integer> list = new ArrayList<>();
         for (int i : nums2) {
